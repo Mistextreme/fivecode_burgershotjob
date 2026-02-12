@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Options</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Payment UI -->
+    <div id="payment-ui" class="center-container" style="display: none;">
+        <div class="content">
+            <div class="amount-display">
+                <h2 id="amount-value">Total Amount: $00.00</h2>
+            </div>
+            <div class="image-container">
+                <img src="images/cash_register.png" alt="Cash Register">
+                <div class="buttons">
+                    <button class="btn cash" onclick="handlePayment('cash')">Cash</button>
+                    <button class="btn card" onclick="handlePayment('card')">Card</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Food Menu -->
+    <div class="whiteboard">
+        <img src="images/burgershotlogo.png" alt="BurgerShot Logo" class="logo">
+        <h1>Food Menu</h1>
+        <div id="menu-board">
+        </div>
+    </div>
+
+    <!-- Audio element for playing sounds -->
+    <audio id="soundPlayer" src="" preload="auto"></audio>
+
+    <script src="scripts.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
